@@ -3,7 +3,7 @@ Repositório de código do sistema desenvolvido para clinica darmas.
 
 ## Tecnologias:
 
-* Python 3.6.1
+* Python 3.6.6
 * Flask 1.0.2
 * PostgreSQL
 * Bulma Framework
