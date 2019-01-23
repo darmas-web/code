@@ -1,5 +1,6 @@
 # Sistema de gestão da Clinica Darmas
 Repositório de código do sistema desenvolvido para clinica darmas.
+Documentação em [darmas-web/doc](https://darmas-web.github.io/doc/) 
 
 ## Tecnologias:
 
