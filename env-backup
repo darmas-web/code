@@ -1,9 +1,0 @@
-# Para automatizar o setup ao entrar no diretório do projeto
-# https://github.com/loopbit/autoenv_fish
-
-source .venv/bin/activate.fish
-export FLASK_APP=darmas.py
-export FLASK_DEBUG=1
-export SECRET="meu-segredo"
-export APP_SETTINGS="development"
-export DATABASE_URL="postgresql://localhost/flask_api"
