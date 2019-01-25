@@ -8,7 +8,9 @@ Documentação em [darmas-web/doc](https://darmas-web.github.io/doc/)
 * Flask 1.0.2
 * PostgreSQL
 * Bulma Framework
-* Vuejs
+* ~~Vuejs~~ 
+* Riotjs
+* Fetchjs
 
 
 Ambiente de testes (local):
