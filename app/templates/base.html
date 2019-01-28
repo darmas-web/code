@@ -1,21 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     {% block head %}
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bulma - Tabs</title>
+    <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='css/bulma.min.css') }}" />
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='css/tabs.css') }}" />
     {% endblock %}
 </head>
+
 <body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+                <img src="{{ url_for('static', filename='img/logo-darmas.png') }}" alt="Clinica Darmas">
+            </a>
+            
+            <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div id="navbarExampleTransparentExample" class="navbar-menu">
+            <div class="navbar-start is-link">
+                <a class="navbar-item has-text-white" href="https://github.com/dansup/bulma-templates">
+                    Inicio
+                </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-white" href="/documentation/overview/start/">
+                        Ações
+                    </a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item" href="admin.html">
+                            Consulta
+                        </a>
+                        <a class="navbar-item is-active" href="forum.html">
+                            Paciente
+                        </a>
+                        <a class="navbar-item" href="cover.html">
+                            Profissional
+                        </a>
+                        <a class="navbar-item" href="cards.html">
+                            Ajuda
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="field is-grouped">
+                        <p class="control">
+                            <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet"
+                                data-social-target="#" target="_blank" href="https://facebook.com/clinicadarmas">
+                                <span class="icon">
+                                    <i class="fab fa-facebook"></i>
+                                </span>
+                                <span>
+                                    Facebook
+                                </span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title has-text-white">
+                    Clinica Darmas
+                </h1>
+                <h2 class="subtitle has-text-white">
+                    Sistema de gestão
+                </h2>
+            </div>
+        </div>
+    </section>
     {% block scripts %}
         <script type=text/javascript> $SCRIPT_ROOT = {{ request.script_root|tojson|safe }}</script>
         <script src="{{ url_for('static', filename='js/lib/riot+compiler.min.js') }}"></script>
         <script src="{{ url_for('static', filename='js/lib/zepto.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/lib/bulma.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/lib/tabs.js') }}"></script>
     {% endblock %}
-
     {% block content %}
         {% block app_content %}{% endblock %}
     {% endblock %}

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block scripts %}
+{{ super() }}
+<script type="riot/tag" src="{{ url_for('static', filename='js/tags/form_paciente.tag') }}"></script>
+{% endblock %}
+
+{% block app_content %}
+
+<div class="container">
+    <br>
+    <form-paciente></form-paciente>
+</div>
+
+<script>
+    riot.mount('form-paciente', {
+        title: 'I want to behave!',
+        items: [
+            { title: 'Avoid excessive caffeine', done: true },
+            { title: 'Hidden item', hidden: true },
+            { title: 'Be less provocative' },
+            { title: 'Be nice to people' }
+        ]
+    })
+</script>
+{% endblock %}
