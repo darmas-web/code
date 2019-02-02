@@ -5,22 +5,16 @@
         </div>
         <div class="field-body">
             <div class="field">
-                <p class="control is-expanded has-icons-left">
+                <p class="control is-expanded ">
                     <input class="input" type="text" placeholder="Nome">
-                    <span class="icon is-small is-left">
-                        <i class="fas fa-user"></i>
-                    </span>
                 </p>
                 <p class="help is-danger">
                     Campo obrigatório!
                 </p>
             </div>
             <div class="field">
-                <p class="control is-expanded has-icons-left has-icons-right">
+                <p class="control is-expanded">
                     <input class="input" type="email" placeholder="Email">
-                    <span class="icon is-small is-left">
-                        <i class="fas fa-envelope"></i>
-                    </span>
                     <span class="icon is-small is-right">
                         <i class="fas fa-check"></i>
                     </span>
@@ -34,33 +28,20 @@
         </div>
         <div class="field-body">
             <div class="field">
-                <p class="control is-expanded has-icons-left">
+                <p class="control is-expanded">
                     <input class="input" type="text" placeholder="Data Nascimento">
-                    <span class="icon is-small is-left">
-                        <i class="fas fa-user"></i>
-                    </span>
                 </p>
             </div>
             <div class="field">
-                <p class="control is-expanded has-icons-left has-icons-right">
+                <p class="control is-expanded">
                     <input class="input" type="text" placeholder="RG">
-                    <span class="icon is-small is-left">
-                        <i class="fas fa-envelope"></i>
-                    </span>
-                    <span class="icon is-small is-right">
-                        <i class="fas fa-check"></i>
-                    </span>
+                    
+                    
                 </p>
             </div>
             <div class="field">
-                <p class="control is-expanded has-icons-left has-icons-right">
+                <p class="control is-expanded">
                     <input class="input" type="text" placeholder="CPF">
-                    <span class="icon is-small is-left">
-                        <i class="fas fa-envelope"></i>
-                    </span>
-                    <span class="icon is-small is-right">
-                        <i class="fas fa-check"></i>
-                    </span>
                 </p>
             </div>
         </div>
@@ -72,33 +53,20 @@
         </div>
         <div class="field-body">
             <div class="field">
-                <p class="control is-expanded has-icons-left">
+                <p class="control is-expanded">
                     <input class="input" type="text" placeholder="Filiação">
-                    <span class="icon is-small is-left">
-                        <i class="fas fa-user"></i>
-                    </span>
+                    
                 </p>
             </div>
             <div class="field">
-                <p class="control is-expanded has-icons-left has-icons-right">
+                <p class="control is-expanded">
                     <input class="input" type="text" placeholder="Profissão">
-                    <span class="icon is-small is-left">
-                        <i class="fas fa-envelope"></i>
-                    </span>
-                    <span class="icon is-small is-right">
-                        <i class="fas fa-check"></i>
-                    </span>
+                    
                 </p>
             </div>
             <div class="field">
-                <p class="control is-expanded has-icons-left has-icons-right">
+                <p class="control is-expanded">
                     <input class="input" type="text" placeholder="Responsável">
-                    <span class="icon is-small is-left">
-                        <i class="fas fa-envelope"></i>
-                    </span>
-                    <span class="icon is-small is-right">
-                        <i class="fas fa-check"></i>
-                    </span>
                 </p>
             </div>
         </div>
@@ -110,33 +78,18 @@
         </div>
         <div class="field-body">
             <div class="field">
-                <p class="control is-expanded has-icons-left">
+                <p class="control is-expanded">
                     <input class="input" type="text" placeholder="Celular">
-                    <span class="icon is-small is-left">
-                        <i class="fas fa-user"></i>
-                    </span>
                 </p>
             </div>
             <div class="field">
-                <p class="control is-expanded has-icons-left has-icons-right">
+                <p class="control is-expanded">
                     <input class="input" type="text" placeholder="Fixo">
-                    <span class="icon is-small is-left">
-                        <i class="fas fa-envelope"></i>
-                    </span>
-                    <span class="icon is-small is-right">
-                        <i class="fas fa-check"></i>
-                    </span>
                 </p>
             </div>
             <div class="field">
-                <p class="control is-expanded has-icons-left has-icons-right">
+                <p class="control is-expanded">
                     <input class="input" type="text" placeholder="Telefone Responsável">
-                    <span class="icon is-small is-left">
-                        <i class="fas fa-envelope"></i>
-                    </span>
-                    <span class="icon is-small is-right">
-                        <i class="fas fa-check"></i>
-                    </span>
                 </p>
             </div>
         </div>
@@ -148,33 +101,18 @@
         </div>
         <div class="field-body">
             <div class="field">
-                <p class="control is-expanded has-icons-left">
+                <p class="control is-expanded">
                     <input class="input" type="text" placeholder="CEP">
-                    <span class="icon is-small is-left">
-                        <i class="fas fa-user"></i>
-                    </span>
                 </p>
             </div>
             <div class="field">
-                <p class="control is-expanded has-icons-left has-icons-right">
+                <p class="control is-expanded">
                     <input class="input" type="text" placeholder="Rua">
-                    <span class="icon is-small is-left">
-                        <i class="fas fa-envelope"></i>
-                    </span>
-                    <span class="icon is-small is-right">
-                        <i class="fas fa-check"></i>
-                    </span>
                 </p>
             </div>
             <div class="field">
-                <p class="control is-expanded has-icons-left has-icons-right">
+                <p class="control is-expanded">
                     <input class="input" type="text" placeholder="Número">
-                    <span class="icon is-small is-left">
-                        <i class="fas fa-envelope"></i>
-                    </span>
-                    <span class="icon is-small is-right">
-                        <i class="fas fa-check"></i>
-                    </span>
                 </p>
             </div>
         </div>
@@ -186,33 +124,18 @@
         </div>
         <div class="field-body">
             <div class="field">
-                <p class="control is-expanded has-icons-left">
+                <p class="control is-expanded">
                     <input class="input" type="text" placeholder="Complemento">
-                    <span class="icon is-small is-left">
-                        <i class="fas fa-user"></i>
-                    </span>
                 </p>
             </div>
             <div class="field">
-                <p class="control is-expanded has-icons-left has-icons-right">
+                <p class="control is-expanded">
                     <input class="input" type="text" placeholder="Cidade">
-                    <span class="icon is-small is-left">
-                        <i class="fas fa-envelope"></i>
-                    </span>
-                    <span class="icon is-small is-right">
-                        <i class="fas fa-check"></i>
-                    </span>
                 </p>
             </div>
             <div class="field">
-                <p class="control is-expanded has-icons-left has-icons-right">
+                <p class="control is-expanded">
                     <input class="input" type="text" placeholder="Estado">
-                    <span class="icon is-small is-left">
-                        <i class="fas fa-envelope"></i>
-                    </span>
-                    <span class="icon is-small is-right">
-                        <i class="fas fa-check"></i>
-                    </span>
                 </p>
             </div>
         </div>
