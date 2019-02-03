@@ -1,4 +1,4 @@
-<c-form-paciente>
+<c-form-paciente-dados>
     <div class="field is-horizontal">
         <div class="field-label is-normal">
             <label class="label">Identificação</label>
@@ -158,4 +158,4 @@
             </a>
         </p>
     </div>
-</c-form-paciente>
+</c-form-paciente-dados>

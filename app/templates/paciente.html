@@ -2,7 +2,10 @@
 
 {% block scripts %}
 {{ super() }}
-<script type="riot/tag" src="{{ url_for('static', filename='js/tags/c-form-paciente.tag') }}"></script>
+<script type="riot/tag" src="{{ url_for('static', filename='js/tags/c-form-paciente-dados.tag') }}"></script>
+<script type="riot/tag" src="{{ url_for('static', filename='js/tags/c-form-paciente-convenios.tag') }}"></script>
+<script type="riot/tag" src="{{ url_for('static', filename='js/tags/c-form-paciente-prontuario.tag') }}"></script>
+<script type="riot/tag" src="{{ url_for('static', filename='js/tags/c-form-paciente-documentos.tag') }}"></script>
 <script type="riot/tag" src="{{ url_for('static', filename='js/tags/c-tab.tag') }}"></script>
 {% endblock %}
 
