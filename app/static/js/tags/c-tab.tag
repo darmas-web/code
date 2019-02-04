@@ -28,7 +28,7 @@
     </div>
 
     <!--  Lógica do componente  -->
-    this.selected = 3;
+    this.selected = 0;
     click (e) {
         this.selected = e.item.k;
     }
