@@ -9,3 +9,7 @@ def index():
 @core.route('/paciente')
 def paciente():
     return render_template('paciente.html')
+
+@core.route('/profissional')
+def profissional():
+    return render_template('profissional.html')
