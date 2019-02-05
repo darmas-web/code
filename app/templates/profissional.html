@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block scripts %}
+{{ super() }}
+<script type="riot/tag" src="{{ url_for('static', filename='js/tags/c-form-profissional-dados.tag') }}"></script>
+<script type="riot/tag" src="{{ url_for('static', filename='js/tags/c-form-profissional-horarios.tag') }}"></script>
+<script type="riot/tag" src="{{ url_for('static', filename='js/tags/c-form-documentos.tag') }}"></script>
+<script type="riot/tag" src="{{ url_for('static', filename='js/tags/c-tab-profissional.tag') }}"></script>
+{% endblock %}
+
+{% block app_content %}
+
+<div class="container">
+    <br>
+    <c-tab-profissional></c-tab-profissional>
+    <br>
+</div>
+
+<script>
+    riot.mount('c-tab-profissional', {
+        tabs: [
+            {id: 0, title: 'Dados'},
+            {id: 1, title: 'Horarios'},
+            {id: 2, title: 'Documentos'}
+        ]
+    })
+</script>
+{% endblock %}
