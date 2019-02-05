@@ -2,24 +2,28 @@
 
 {% block scripts %}
 {{ super() }}
-<script type="riot/tag" src="{{ url_for('static', filename='js/tags/form_paciente.tag') }}"></script>
+<script type="riot/tag" src="{{ url_for('static', filename='js/tags/c-form-paciente-dados.tag') }}"></script>
+<script type="riot/tag" src="{{ url_for('static', filename='js/tags/c-form-paciente-convenios.tag') }}"></script>
+<script type="riot/tag" src="{{ url_for('static', filename='js/tags/c-form-paciente-prontuario.tag') }}"></script>
+<script type="riot/tag" src="{{ url_for('static', filename='js/tags/c-form-documentos.tag') }}"></script>
+<script type="riot/tag" src="{{ url_for('static', filename='js/tags/c-tab-paciente.tag') }}"></script>
 {% endblock %}
 
 {% block app_content %}
 
 <div class="container">
     <br>
-    <form-paciente></form-paciente>
+    <c-tab-paciente></c-tab-paciente>
+    <br>
 </div>
 
 <script>
-    riot.mount('form-paciente', {
-        title: 'I want to behave!',
-        items: [
-            { title: 'Avoid excessive caffeine', done: true },
-            { title: 'Hidden item', hidden: true },
-            { title: 'Be less provocative' },
-            { title: 'Be nice to people' }
+    riot.mount('c-tab-paciente', {
+        tabs: [
+            {id: 0, title: 'Dados'},
+            {id: 1, title: 'Convênios'},
+            {id: 2, title: 'Prontuário'},
+            {id: 3, title: 'Documentos'}
         ]
     })
 </script>

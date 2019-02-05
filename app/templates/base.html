@@ -4,7 +4,7 @@
 <head>
     {% block head %}
     <meta charset="UTF-8">
-    <title>Bulma - Tabs</title>
+    <title>Clinica Darmas</title>
     <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='css/bulma.min.css') }}" />
     <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='css/tabs.css') }}" />
@@ -50,16 +50,16 @@
                 </div>
             </div>
             <div class="navbar-end">
+                <p class="navbar-item has-text-white">
+                        Nome Funcionário [Perfil]
+                </p>
                 <div class="navbar-item">
+                    
                     <div class="field is-grouped">
                         <p class="control">
-                            <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet"
-                                data-social-target="#" target="_blank" href="https://facebook.com/clinicadarmas">
-                                <span class="icon">
-                                    <i class="fab fa-facebook"></i>
-                                </span>
+                            <a class="navbar-item has-text-white"  href="#">
                                 <span>
-                                    Facebook
+                                    Sair
                                 </span>
                             </a>
                         </p>
@@ -85,10 +85,15 @@
         <script src="{{ url_for('static', filename='js/lib/riot+compiler.min.js') }}"></script>
         <script src="{{ url_for('static', filename='js/lib/zepto.min.js') }}"></script>
         <script src="{{ url_for('static', filename='js/lib/bulma.js') }}"></script>
-        <script src="{{ url_for('static', filename='js/lib/tabs.js') }}"></script>
     {% endblock %}
     {% block content %}
         {% block app_content %}{% endblock %}
     {% endblock %}
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>&copy Clinica Fácil v-1.0.0</p>
+            <p>Desenvolvido por <a href="https://gomes-fdr.github.io/" target="_blank">Fargos Sistemas e Automação</a></p>
+        </div>
+    </footer>
 </body>
 </html>
