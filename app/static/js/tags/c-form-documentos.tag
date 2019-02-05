@@ -1,4 +1,4 @@
-<c-form-paciente-documentos>
+<c-form-documentos>
     <div class="field is-horizontal">
         <div class="field-label is-normal">
             <label class="label">Dados</label>
@@ -71,4 +71,4 @@
             </tr>
         </tbody>
     </table>
-</c-form-paciente-documentos>
+</c-form-documentos>

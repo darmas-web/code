@@ -1,4 +1,4 @@
-<c-tab>
+<c-tab-paciente>
     <div class="tabs is-toggle">
         <ul>
             <li each="{tab,k in opts.tabs}" class={ is-active: parent.selected==k } onclick={ parent.click }><a>{ tab.title }</a></li>
@@ -22,7 +22,7 @@
         </div>
         <div if={ this.selected == opts.tabs[3].id } class="card">
             <div class="card-content">
-                <c-form-paciente-documentos></c-form-paciente-documentos>
+                <c-form-documentos></c-form-documentos>
             </div>
         </div>
     </div>
@@ -32,4 +32,4 @@
     click (e) {
         this.selected = e.item.k;
     }
-</c-tab>
+</c-tab-paciente>

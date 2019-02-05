@@ -5,20 +5,20 @@
 <script type="riot/tag" src="{{ url_for('static', filename='js/tags/c-form-paciente-dados.tag') }}"></script>
 <script type="riot/tag" src="{{ url_for('static', filename='js/tags/c-form-paciente-convenios.tag') }}"></script>
 <script type="riot/tag" src="{{ url_for('static', filename='js/tags/c-form-paciente-prontuario.tag') }}"></script>
-<script type="riot/tag" src="{{ url_for('static', filename='js/tags/c-form-paciente-documentos.tag') }}"></script>
-<script type="riot/tag" src="{{ url_for('static', filename='js/tags/c-tab.tag') }}"></script>
+<script type="riot/tag" src="{{ url_for('static', filename='js/tags/c-form-documentos.tag') }}"></script>
+<script type="riot/tag" src="{{ url_for('static', filename='js/tags/c-tab-paciente.tag') }}"></script>
 {% endblock %}
 
 {% block app_content %}
 
 <div class="container">
     <br>
-    <c-tab></c-tab>
+    <c-tab-paciente></c-tab-paciente>
     <br>
 </div>
 
 <script>
-    riot.mount('c-tab', {
+    riot.mount('c-tab-paciente', {
         tabs: [
             {id: 0, title: 'Dados'},
             {id: 1, title: 'Convênios'},
