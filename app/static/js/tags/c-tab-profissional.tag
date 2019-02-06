@@ -23,7 +23,7 @@
     </div>
 
     <!--  Lógica do componente  -->
-    this.selected = 0;
+    this.selected = 1;
     click (e) {
         this.selected = e.item.k;
     }

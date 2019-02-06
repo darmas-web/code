@@ -6,6 +6,10 @@ from app.core import core
 def index():
     return render_template('index.html')
 
+@core.route('/consulta')
+def consulta():
+    return render_template('index.html')
+
 @core.route('/paciente')
 def paciente():
     return render_template('paciente.html')

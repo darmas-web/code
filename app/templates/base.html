@@ -5,7 +5,7 @@
     {% block head %}
     <meta charset="UTF-8">
     <title>Clinica Darmas</title>
-    <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}" type="image/x-icon">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='css/bulma.min.css') }}" />
     <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='css/tabs.css') }}" />
     {% endblock %}
@@ -26,24 +26,24 @@
         </div>
         <div id="navbarExampleTransparentExample" class="navbar-menu">
             <div class="navbar-start is-link">
-                <a class="navbar-item has-text-white" href="https://github.com/dansup/bulma-templates">
+                <a class="navbar-item has-text-white" href="{{ url_for('core.index') }}">
                     Inicio
                 </a>
                 <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link has-text-white" href="/documentation/overview/start/">
+                    <a class="navbar-link has-text-white" href="#">
                         Ações
                     </a>
                     <div class="navbar-dropdown is-boxed">
-                        <a class="navbar-item" href="admin.html">
+                        <a class="navbar-item" href="{{ url_for('core.consulta') }}">
                             Consulta
                         </a>
-                        <a class="navbar-item is-active" href="forum.html">
+                        <a class="navbar-item is-active" href="{{ url_for('core.paciente') }}">
                             Paciente
                         </a>
-                        <a class="navbar-item" href="cover.html">
+                        <a class="navbar-item" href="{{ url_for('core.profissional') }}">
                             Profissional
                         </a>
-                        <a class="navbar-item" href="cards.html">
+                        <a class="navbar-item" href="https://darmas-web.github.io/doc/">
                             Ajuda
                         </a>
                     </div>

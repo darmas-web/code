@@ -19,10 +19,15 @@
     X{ items.filter(onlyDone).length } </button>
   </form>
 
-  <!-- this script tag is optional -->
-  <script>
-    this.items = opts.items
+  <br>
 
+  <input ref="input" type="text" onkeyup={ teste }> <span>{text2}</span>
+
+    this.items = opts.items
+        
+    teste(e) {
+        this.text2 = e.target.value;
+    }
     edit(e) {
       this.text = e.target.value
     }
@@ -55,7 +60,6 @@
       item.done = !item.done
       return true
     }
-  </script>
 <style>
 
 body {
